@@ -1,0 +1,79 @@
+body{
+    background-color:antiquewhite;
+    /*Animation */
+    opacity: 0;
+    transition: opacity .5s;
+}
+/*MOTION OF SQUARE*/
+.moving_square{
+    position: absolute;
+  top: 50%;
+  left: 33%;
+  margin: -25px 0 0 -25px;
+}
+.moving_square2{
+    position: absolute;
+  top: 50%;
+  left: 67%;
+  margin: -25px 0 0 -25px;
+}
+.motion_square{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: square;
+    position: relative;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.motion_square_2{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-name: square2;
+        position: relative;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+}
+@keyframes square{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:-200px;}
+    50%  {background-color:blue; left:-200px; top:0px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;} 
+  }
+@keyframes square2{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:200px;}
+    50%  {background-color:blue; left:200px; top:0px;}
+    75%  {background-color:green; left:0px; top:-200px;}
+    100% {background-color:red; left:0px; top:0px;} 
+  }  
+
+/* BUTTON*/
+ .centralize_the_button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}
+#button{
+    padding: 10px 15px;
+    background: #03f5a4;
+    color:white;
+    border: 2px solid #03f5a4;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    border-radius:5px;
+}
+#button:hover{
+  padding: 10px 15px;
+  background:white;
+  color:#03f5a4;
+  border: 2px solid #03f5a4;
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 2px;
+  border-radius:5px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Menu</title>
+        
+</head>
+<body>
+    <div class="moving_square">
+        <div class="motion_square"></div>
+    </div>
+    <div class="moving_square2">
+        <div class="motion_square_2"></div>
+    </div>
+    <div class = "centralize_the_button">
+            <button id = "button" onclick="transitionToPage()"> START </button>
+    </div>
+    <script>
+        var btn = document.getElementById("button");
+        
+        window.transitionToPage = function(href) {
+            document.querySelector('body').style.opacity = 0
+            setTimeout(function() { 
+            window.location.href = '/player.html';
+        }, 500)
+        }
+
+        document.addEventListener('DOMContentLoaded', function(event) {
+        document.querySelector('body').style.opacity = 1
+        })
+      </script>
+    
+</body>
+</html>
